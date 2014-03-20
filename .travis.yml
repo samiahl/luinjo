@@ -1,0 +1,13 @@
+language: ruby
+rvm:
+- 2.1.0
+deploy:
+  provider: heroku
+  api_key:
+    secure: hyflrgPCBqT5v5RpciPVMM075QhhrdwCAJJKP4MKJJ7cMYgGqdNkdUjqMzev/FgxCKUgNdJtEKCOBLbFQxqkAsUGbRcDUtSG35b4AIQJloSGRCajV+WSUuqqhgdtWTeIUSUHdwjEGlUQZHON/gd0CrQWlZJmQwGfa/rgWBOvcA8=
+  app:
+    master: luinjo-prod 
+    development: luinjo-staging
+  on:
+    repo: Irkka/luinjo
+  run: "rake db:migrate"
