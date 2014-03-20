@@ -1,0 +1,36 @@
+## Luinjo - A Reddit clone on a national level
+Setting up your development environment should be relatively painless. I'm open to suggestions for streamlining my process, so don't hesitate to submit a Pull Request that makes developing even more fun. Automation - good; manual configuration - bad.
+
+### Ruby version
+The used Ruby version is declared in the .ruby-version file. Usage of rbenv is highly recommended.
+
+```
+rbenv version
+```
+
+### Dependencies
+The dependencies are managed on a scope basis by Bundler. You can refer to them or add them in the Gemfile.
+
+```
+bundle install
+```
+
+### Testing
+The test suite is run by issuing a proper rake task invocation. The testing framework used is RSpec extended with Capybara functionality for integration level testing.
+
+```
+rake spec
+```
+
+### Deployment
+I'm a fan of Continuous Delivery. Everything merged to this Blessed repo, whether master or development branch, will be deployed to either the prod or the dev server respectively.
+
+The deployed apps will be hosted by Heroku for the time being, since I'm doing this alone. Maybe if people like this application, I'll upgrade the plan there or get a dedicated server solution.
+
+All in all, if you wish to deploy your own forked instance, you have to set up your Travis CI -> Heroku (or whatever) setup by yourself. Anything deployed to the mother project will go through Pull Request mechanism.
+
+---
+
+Would-be-contributors check out CONTRIBUTING.md!
+
+-Ike
