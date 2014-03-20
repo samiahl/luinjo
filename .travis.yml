@@ -4,10 +4,9 @@ rvm:
 deploy:
   provider: heroku
   api_key:
-    secure: hyflrgPCBqT5v5RpciPVMM075QhhrdwCAJJKP4MKJJ7cMYgGqdNkdUjqMzev/FgxCKUgNdJtEKCOBLbFQxqkAsUGbRcDUtSG35b4AIQJloSGRCajV+WSUuqqhgdtWTeIUSUHdwjEGlUQZHON/gd0CrQWlZJmQwGfa/rgWBOvcA8=
+    secure: Tj3NOUgGH8kbQ4fen7MHOHklYhZYcQWyeyKKkYkRppRafpV1n74OcORv/pS6b6M2r48aL8yA0Crp4vIp+jP2zZ8bmNorhORXWJDMj8xkDw0Cgfg3tFE1YaMyRYFFwOJnXOxFJ+KmrQ2getxuN/RO0Ss8To2fgxAFiOKQ2BSpHR4=
   app:
-    master: luinjo-prod 
+    master: luinjo-prod
     development: luinjo-staging
   on:
     repo: Irkka/luinjo
-  run: "rake db:migrate"
