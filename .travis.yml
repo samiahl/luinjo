@@ -10,3 +10,4 @@ deploy:
     development: luinjo-staging
   on:
     repo: Irkka/luinjo
+  run: "rake db:migrate"
