@@ -1,4 +1,5 @@
 Luinjo::Application.routes.draw do
+  devise_for :users
   resources :information_cones
 
   resources :posts

@@ -32,6 +32,9 @@ gem 'jbuilder', '~> 1.2'
 # Code Coverage Badge
 gem 'coveralls', require: false
 
+# Authentication and User management
+gem 'devise'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
