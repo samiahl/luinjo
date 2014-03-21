@@ -17,3 +17,6 @@
 
 # Vim
 *.swp
+
+# Coverage reports
+/coverage

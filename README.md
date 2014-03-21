@@ -1,3 +1,10 @@
+[![Build Status](https://travis-ci.org/Irkka/luinjo.svg?branch=development)](https://travis-ci.org/Irkka/luinjo)
+[![Dependency Status](https://gemnasium.com/Irkka/luinjo.svg)](https://gemnasium.com/Irkka/luinjo)
+[![Coverage Status](https://coveralls.io/repos/Irkka/luinjo/badge.png)](https://coveralls.io/r/Irkka/luinjo)
+[![Code Climate](https://codeclimate.com/github/Irkka/luinjo.png)](https://codeclimate.com/github/Irkka/luinjo)
+
+===
+
 ## Luinjo - A Reddit clone on a national level
 Setting up your development environment should be relatively painless. I'm open to suggestions for streamlining my process, so don't hesitate to submit a Pull Request that makes developing even more fun. Automation - good; manual configuration - bad.
 
@@ -9,17 +16,38 @@ rbenv version
 ```
 
 ### Dependencies
-The dependencies are managed on a scope basis by Bundler. You can refer to them or add them in the Gemfile.
+The dependencies are managed on a scope basis by Bundler. You can refer to them or add them in the Gemfile. Guard will watch for changes in the Gemfile and run the necessary command to install dependencies.
 
+*Automatically:*
+```
+guard
+```
+
+*Manually:*
 ```
 bundle install
 ```
 
 ### Testing
-The test suite is run by issuing a proper rake task invocation. The testing framework used is RSpec extended with Capybara functionality for integration level testing.
+The test suite is run by issuing a proper rake task invocation. The testing framework used is RSpec extended with Capybara functionality for integration level testing. Now with guard enabled testing is a simple matter of executing the guard command from within the project tree. Just write 'em tests and watch 'em fail!
 
+#### Running tests
+
+*Automatically:*
+```
+guard
+```
+
+*Manually:*
 ```
 rake spec
+```
+
+### Running locally
+I assume that anyone contributing here is already familiar with the Rails framework. To make the front-end developers' lives a bit easier though, I enabled the guard-livereload gem for the project. Just install the browser plugin, start the server and connect to Guard.
+
+```
+guard
 ```
 
 ### Deployment
@@ -29,7 +57,7 @@ The deployed apps will be hosted by Heroku for the time being, since I'm doing t
 
 All in all, if you wish to deploy your own forked instance, you have to set up your Travis CI -> Heroku (or whatever) setup by yourself. Anything deployed to the mother project will go through Pull Request mechanism.
 
----
+===
 
 Would-be-contributors check out CONTRIBUTING.md!
 
