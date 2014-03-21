@@ -2,6 +2,7 @@
 [![Dependency Status](https://gemnasium.com/Irkka/luinjo.svg)](https://gemnasium.com/Irkka/luinjo)
 [![Coverage Status](https://coveralls.io/repos/Irkka/luinjo/badge.png)](https://coveralls.io/r/Irkka/luinjo)
 [![Code Climate](https://codeclimate.com/github/Irkka/luinjo.png)](https://codeclimate.com/github/Irkka/luinjo)
+
 ===
 
 ## Luinjo - A Reddit clone on a national level
