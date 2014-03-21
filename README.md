@@ -1,4 +1,7 @@
+[![Build Status](https://travis-ci.org/Irkka/luinjo.svg?branch=development)](https://travis-ci.org/Irkka/luinjo)
+[![Dependency Status](https://gemnasium.com/Irkka/luinjo.svg)](https://gemnasium.com/Irkka/luinjo)
 [![Coverage Status](https://coveralls.io/repos/Irkka/luinjo/badge.png)](https://coveralls.io/r/Irkka/luinjo)
+[![Code Climate](https://codeclimate.com/github/Irkka/luinjo.png)](https://codeclimate.com/github/Irkka/luinjo)
 ===
 
 ## Luinjo - A Reddit clone on a national level
@@ -53,7 +56,7 @@ The deployed apps will be hosted by Heroku for the time being, since I'm doing t
 
 All in all, if you wish to deploy your own forked instance, you have to set up your Travis CI -> Heroku (or whatever) setup by yourself. Anything deployed to the mother project will go through Pull Request mechanism.
 
----
+===
 
 Would-be-contributors check out CONTRIBUTING.md!
 
