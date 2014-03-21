@@ -9,17 +9,38 @@ rbenv version
 ```
 
 ### Dependencies
-The dependencies are managed on a scope basis by Bundler. You can refer to them or add them in the Gemfile.
+The dependencies are managed on a scope basis by Bundler. You can refer to them or add them in the Gemfile. Guard will watch for changes in the Gemfile and run the necessary command to install dependencies.
 
+*Automatically:*
+```
+guard
+```
+
+*Manually:*
 ```
 bundle install
 ```
 
 ### Testing
-The test suite is run by issuing a proper rake task invocation. The testing framework used is RSpec extended with Capybara functionality for integration level testing.
+The test suite is run by issuing a proper rake task invocation. The testing framework used is RSpec extended with Capybara functionality for integration level testing. Now with guard enabled testing is a simple matter of executing the guard command from within the project tree. Just write 'em tests and watch 'em fail!
 
+#### Running tests
+
+*Automatically:*
+```
+guard
+```
+
+*Manually:*
 ```
 rake spec
+```
+
+### Running locally
+I assume that anyone contributing here is already familiar with the Rails framework. To make the front-end developers' lives a bit easier though, I enabled the guard-livereload gem for the project. Just install the browser plugin, start the server and connect to Guard.
+
+```
+guard
 ```
 
 ### Deployment
