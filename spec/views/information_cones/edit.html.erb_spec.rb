@@ -8,7 +8,7 @@ describe "information_cones/edit" do
     ))
   end
 
-  it "renders the edit information_cone form" do
+  xit "renders the edit information_cone form" do
     render
 
     # Run the generator again with the --webrat flag if you want to use webrat matchers
