@@ -1,4 +1,6 @@
 Luinjo::Application.routes.draw do
+  resources :information_cones
+
   resources :posts
 
   # The priority is based upon order of creation: first created -> highest priority.
