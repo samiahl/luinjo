@@ -9,6 +9,8 @@
       <th><%= model_class.human_attribute_name(:title) %></th>
       <th><%= model_class.human_attribute_name(:description) %></th>
       <th><%= model_class.human_attribute_name(:url) %></th>
+      <th><%= model_class.human_attribute_name(:information_cone_id) %></th>
+      <th><%= model_class.human_attribute_name(:user_id) %></th>
       <th><%= model_class.human_attribute_name(:created_at) %></th>
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
@@ -20,6 +22,8 @@
         <td><%= post.title %></td>
         <td><%= post.description %></td>
         <td><%= post.url %></td>
+        <td><%= post.information_cone_id %></td>
+        <td><%= post.user_id %></td>
         <td><%=l post.created_at %></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
