@@ -1,3 +1,6 @@
+[![Coverage Status](https://coveralls.io/repos/Irkka/luinjo/badge.png)](https://coveralls.io/r/Irkka/luinjo)
+===
+
 ## Luinjo - A Reddit clone on a national level
 Setting up your development environment should be relatively painless. I'm open to suggestions for streamlining my process, so don't hesitate to submit a Pull Request that makes developing even more fun. Automation - good; manual configuration - bad.
 
