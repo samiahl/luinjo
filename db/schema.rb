@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140321122909) do
+ActiveRecord::Schema.define(version: 20140323115303) do
 
   create_table "information_cones", force: true do |t|
     t.string   "title"
@@ -26,9 +26,12 @@ ActiveRecord::Schema.define(version: 20140321122909) do
     t.string   "url"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "information_cone_id"
     t.integer  "user_id"
+    t.integer  "information_cone_id"
   end
+
+  add_index "posts", ["information_cone_id"], name: "index_posts_on_information_cone_id"
+  add_index "posts", ["user_id"], name: "index_posts_on_user_id"
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false
