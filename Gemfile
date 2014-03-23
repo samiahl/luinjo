@@ -35,6 +35,9 @@ gem 'coveralls', require: false
 # Authentication and User management
 gem 'devise'
 
+# Generate test viewing material
+gem 'seed_dump'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
