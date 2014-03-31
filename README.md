@@ -8,6 +8,25 @@
 ## Luinjo - A Reddit clone on a national level
 Setting up your development environment should be relatively painless. I'm open to suggestions for streamlining my process, so don't hesitate to submit a Pull Request that makes developing even more fun. Automation - good; manual configuration - bad.
 
+### Starting to develop is easier than ever; now with remote debugging enabled
+
+#### Start the server and guard
+```
+foreman start
+```
+
+#### Debug the session remotely
+
+Add the following call to an appropriate line in the source
+```
+binding.remote_pry
+```
+
+and run the following in the shell of your choice
+```
+pry-remote
+```
+
 ### Ruby version
 The used Ruby version is declared in the .ruby-version file. Usage of rbenv is highly recommended.
 

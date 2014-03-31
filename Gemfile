@@ -49,9 +49,12 @@ end
 
 group :development do
   gem 'pry-rails'
+  # Enables attaching to a debug session remotely, fixes the problem with running binding.pry calls in rails server with foreman
+  gem 'pry-remote'
   gem 'guard-rspec'
   gem 'guard-bundler'
   gem 'guard-livereload'
+  gem 'foreman'
 end
 
 group :production do
