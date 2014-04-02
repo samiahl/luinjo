@@ -57,7 +57,7 @@ group :development do
   gem 'foreman'
 end
 
-group :production do
+group :staging, :production do
   # Use PostgreSQL in Heroku instances
   gem 'pg'
   gem 'rails_12factor'
