@@ -21,5 +21,11 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: luinjodb
+  database: staging-luinjodb
+  pool: 5
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: prod-luinjodb
   pool: 5
