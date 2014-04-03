@@ -43,7 +43,7 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-group :test do
+group :test, :staging do
   gem 'fabrication-rails'
 end
 
@@ -63,7 +63,7 @@ group :staging, :production do
   gem 'rails_12factor'
 end
 
-group :test, :development do
+group :test, :development, :staging do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
   gem 'rspec-rails'
