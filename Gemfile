@@ -43,10 +43,6 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-group :test, :staging do
-  gem 'fabrication-rails'
-end
-
 group :development do
   gem 'pry-rails'
   # Enables attaching to a debug session remotely, fixes the problem with running binding.pry calls in rails server with foreman
@@ -63,14 +59,22 @@ group :staging, :production do
   gem 'rails_12factor'
 end
 
-group :test, :development, :staging do
+group :test, :development do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
   gem 'rspec-rails'
   gem 'capybara'
+end
+
+group :test, :staging do
+  gem 'fabrication-rails'
+end
+
+group :test, :development, :staging do
   # Generate test data for the specs and the staging app
   gem 'faker'
 end
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
