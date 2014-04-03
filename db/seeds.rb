@@ -10,4 +10,4 @@ require 'post_fabricator'
   Fabricate(:information_cone)
 end
 
-100.times { Fabricate(:post) }
+100.times { Fabricate(:random_post) }
