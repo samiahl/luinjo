@@ -68,6 +68,8 @@ group :test, :development do
   gem 'sqlite3'
   gem 'rspec-rails'
   gem 'capybara'
+  # Generate test data for the specs and the staging app
+  gem 'faker'
 end
 
 # Use ActiveModel has_secure_password

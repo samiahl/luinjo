@@ -31,7 +31,7 @@ describe InformationConesController do
   let(:valid_session) { {} }
 
   describe "GET index" do
-    it "assigns all information_cones as @information_cones" do
+    xit "assigns all information_cones as @information_cones" do
       information_cone = InformationCone.create! valid_attributes
       get :index, {}, valid_session
       assigns(:information_cones).should eq([information_cone])
@@ -39,7 +39,7 @@ describe InformationConesController do
   end
 
   describe "GET show" do
-    it "assigns the requested information_cone as @information_cone" do
+    xit "assigns the requested information_cone as @information_cone" do
       information_cone = InformationCone.create! valid_attributes
       get :show, {:id => information_cone.to_param}, valid_session
       assigns(:information_cone).should eq(information_cone)
@@ -47,14 +47,14 @@ describe InformationConesController do
   end
 
   describe "GET new" do
-    it "assigns a new information_cone as @information_cone" do
+    xit "assigns a new information_cone as @information_cone" do
       get :new, {}, valid_session
       assigns(:information_cone).should be_a_new(InformationCone)
     end
   end
 
   describe "GET edit" do
-    it "assigns the requested information_cone as @information_cone" do
+    xit "assigns the requested information_cone as @information_cone" do
       information_cone = InformationCone.create! valid_attributes
       get :edit, {:id => information_cone.to_param}, valid_session
       assigns(:information_cone).should eq(information_cone)
@@ -63,33 +63,33 @@ describe InformationConesController do
 
   describe "POST create" do
     describe "with valid params" do
-      it "creates a new InformationCone" do
+      xit "creates a new InformationCone" do
         expect {
           post :create, {:information_cone => valid_attributes}, valid_session
         }.to change(InformationCone, :count).by(1)
       end
 
-      it "assigns a newly created information_cone as @information_cone" do
+      xit "assigns a newly created information_cone as @information_cone" do
         post :create, {:information_cone => valid_attributes}, valid_session
         assigns(:information_cone).should be_a(InformationCone)
         assigns(:information_cone).should be_persisted
       end
 
-      it "redirects to the created information_cone" do
+      xit "redirects to the created information_cone" do
         post :create, {:information_cone => valid_attributes}, valid_session
         response.should redirect_to(InformationCone.last)
       end
     end
 
     describe "with invalid params" do
-      it "assigns a newly created but unsaved information_cone as @information_cone" do
+      xit "assigns a newly created but unsaved information_cone as @information_cone" do
         # Trigger the behavior that occurs when invalid params are submitted
         InformationCone.any_instance.stub(:save).and_return(false)
         post :create, {:information_cone => { "title" => "invalid value" }}, valid_session
         assigns(:information_cone).should be_a_new(InformationCone)
       end
 
-      it "re-renders the 'new' template" do
+      xit "re-renders the 'new' template" do
         # Trigger the behavior that occurs when invalid params are submitted
         InformationCone.any_instance.stub(:save).and_return(false)
         post :create, {:information_cone => { "title" => "invalid value" }}, valid_session
@@ -100,7 +100,7 @@ describe InformationConesController do
 
   describe "PUT update" do
     describe "with valid params" do
-      it "updates the requested information_cone" do
+      xit "updates the requested information_cone" do
         information_cone = InformationCone.create! valid_attributes
         # Assuming there are no other information_cones in the database, this
         # specifies that the InformationCone created on the previous line
@@ -110,13 +110,13 @@ describe InformationConesController do
         put :update, {:id => information_cone.to_param, :information_cone => { "title" => "MyString" }}, valid_session
       end
 
-      it "assigns the requested information_cone as @information_cone" do
+      xit "assigns the requested information_cone as @information_cone" do
         information_cone = InformationCone.create! valid_attributes
         put :update, {:id => information_cone.to_param, :information_cone => valid_attributes}, valid_session
         assigns(:information_cone).should eq(information_cone)
       end
 
-      it "redirects to the information_cone" do
+      xit "redirects to the information_cone" do
         information_cone = InformationCone.create! valid_attributes
         put :update, {:id => information_cone.to_param, :information_cone => valid_attributes}, valid_session
         response.should redirect_to(information_cone)
@@ -124,7 +124,7 @@ describe InformationConesController do
     end
 
     describe "with invalid params" do
-      it "assigns the information_cone as @information_cone" do
+      xit "assigns the information_cone as @information_cone" do
         information_cone = InformationCone.create! valid_attributes
         # Trigger the behavior that occurs when invalid params are submitted
         InformationCone.any_instance.stub(:save).and_return(false)
@@ -132,7 +132,7 @@ describe InformationConesController do
         assigns(:information_cone).should eq(information_cone)
       end
 
-      it "re-renders the 'edit' template" do
+      xit "re-renders the 'edit' template" do
         information_cone = InformationCone.create! valid_attributes
         # Trigger the behavior that occurs when invalid params are submitted
         InformationCone.any_instance.stub(:save).and_return(false)
@@ -143,14 +143,14 @@ describe InformationConesController do
   end
 
   describe "DELETE destroy" do
-    it "destroys the requested information_cone" do
+    xit "destroys the requested information_cone" do
       information_cone = InformationCone.create! valid_attributes
       expect {
         delete :destroy, {:id => information_cone.to_param}, valid_session
       }.to change(InformationCone, :count).by(-1)
     end
 
-    it "redirects to the information_cones list" do
+    xit "redirects to the information_cones list" do
       information_cone = InformationCone.create! valid_attributes
       delete :destroy, {:id => information_cone.to_param}, valid_session
       response.should redirect_to(information_cones_url)
