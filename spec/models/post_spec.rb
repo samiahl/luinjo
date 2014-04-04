@@ -4,6 +4,9 @@ describe Post do
   # Builds a valid non-persisted post for further manipulation in tests
   let(:post) { Fabricate.build(:post) }
 
+  it {should belong_to(:user)}
+  it {should belong_to(:information_cone)}
+
   context "is not saved when its" do
     context "title" do
       it "is nil/empty string" do

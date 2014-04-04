@@ -4,6 +4,9 @@ describe InformationCone do
   # Builds a valid non-persisted information_cone for further manipulation in tests
   let(:information_cone) { Fabricate.build(:information_cone) }
 
+  it {should have_many(:users).through(:subscriptions)}
+  it {should have_many(:subscriptions).dependent(:destroy)}
+
   context "is not saved when its" do
     context "title" do
       it "is nil/empty string" do

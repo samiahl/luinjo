@@ -73,6 +73,8 @@ end
 group :test, :development, :staging do
   # Generate test data for the specs and the staging app
   gem 'faker'
+  # Add one-liner matchers for RSpec
+  gem 'shoulda-matchers'
 end
 
 
