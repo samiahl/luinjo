@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/Irkka/luinjo.svg?branch=development)](https://travis-ci.org/Irkka/luinjo)
 [![Dependency Status](https://gemnasium.com/Irkka/luinjo.svg)](https://gemnasium.com/Irkka/luinjo)
-[![Coverage Status](https://coveralls.io/repos/Irkka/luinjo/badge.png)](https://coveralls.io/r/Irkka/luinjo)
+[![Coverage Status](https://coveralls.io/repos/Irkka/luinjo/badge.png?branch=development)](https://coveralls.io/r/Irkka/luinjo?branch=development)
 [![Code Climate](https://codeclimate.com/github/Irkka/luinjo.png)](https://codeclimate.com/github/Irkka/luinjo)
 
 ===
