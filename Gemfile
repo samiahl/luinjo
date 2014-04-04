@@ -10,6 +10,7 @@ gem 'sass-rails', '~> 4.0.2'
 
 # Front-end candy
 gem 'twitter-bootstrap-rails'
+gem 'bootstrap-sass'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -51,6 +52,7 @@ group :development do
   gem 'guard-bundler'
   gem 'guard-livereload'
   gem 'foreman'
+  gem 'rails_layout'
 end
 
 group :staging, :production do
