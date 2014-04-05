@@ -9,7 +9,6 @@ gem 'rails', '4.0.4'
 gem 'sass-rails', '~> 4.0.2'
 
 # Front-end candy
-gem 'twitter-bootstrap-rails'
 gem 'bootstrap-sass'
 
 # Use Uglifier as compressor for JavaScript assets
@@ -38,6 +37,10 @@ gem 'devise'
 
 # Generate test viewing material
 gem 'seed_dump'
+
+# Make Navigation Bar generation a cinch
+gem 'simple-navigation'
+gem 'simple_navigation_renderers'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
