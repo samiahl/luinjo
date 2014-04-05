@@ -9,6 +9,7 @@ gem 'rails', '4.0.4'
 gem 'sass-rails', '~> 4.0.2'
 
 # Front-end candy
+gem 'twitter-bootstrap-rails', git: 'https://github.com/seyhunak/twitter-bootstrap-rails.git', branch: 'bootstrap3'
 gem 'bootstrap-sass'
 
 # Use Uglifier as compressor for JavaScript assets
