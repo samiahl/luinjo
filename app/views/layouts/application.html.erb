@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
     <title><%= content_for?(:title) ? yield(:title) : "Luinjo" %></title>
     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Luinjo" %>">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
@@ -16,17 +16,40 @@
     <main>
       <div class="container-fluid">
         <div class="row">
-          <div class="col-sm-3 col-md-2 sidebar">
-            <%= render 'layouts/secondary_navigation' %>
+          <div class="col-sm-2 col-md-2 sidebar">
+            <div class="navbar-default navbar-static-side" role="navigation">
+              <div class="sidebar-collapse">
+                <ul class="nav" id="side-menu">
+                  <li class="sidebar-search">
+                    <div class="input-group custom-search-form">
+                      <input type="text" class="form-control" placeholder="Search for Information Cones...">
+                      <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">
+                          <i class="fa fa-search"></i>
+                        </button>
+                      </span>
+                    </div>
+                    <!-- /input-group -->
+                  </li>
+                  <%= render 'layouts/secondary_navigation' %>
+                </ul>
+                <!-- /#side-menu -->
+              </div>
+              <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
           </div>
           <div class="col-sm-9 col-md-9 main">
+            <%= render 'layouts/messages' %>
             <%= yield %>
           </div>
         </div>
       </div>
     </main>
-    <footer>
-      <%= render 'layouts/footer' %>
+    <footer id="footer">
+      <div class="container-fluid">
+        <%= render 'layouts/footer' %>
+      </div>
     </footer>
   </body>
 </html>
