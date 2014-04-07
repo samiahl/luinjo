@@ -1,0 +1,19 @@
+<div class="row">
+  <div class="col-md-2">
+    <a href="#" class="thumbnail"></a>
+  </div>
+
+  <div class="col-md-2">
+    <p><span class="badge alert-success">Click count number here</span></p>
+    <p><span class="badge alert-danger">Irrelevance number here</span></p>
+  </div>
+  <div class="col-md-8">
+    <p><%= post.title %></p>
+    <p><span class="label label-default"><%= post.information_cone.title %></span> <span class="label label-default"><%= post.user.username %></span></p>
+    <div class="btn-group">
+      <button type="button" class="btn btn-default">Comment</button>
+      <button type="button" class="btn btn-default">Report</button>
+      <button type="button" class="btn btn-danger">Irrelevant!</button>
+    </div>
+  </div>
+</div>

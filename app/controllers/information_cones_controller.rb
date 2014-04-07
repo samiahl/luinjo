@@ -10,6 +10,7 @@ class InformationConesController < ApplicationController
   # GET /information_cones/1
   # GET /information_cones/1.json
   def show
+    @posts = @information_cone.posts
   end
 
   # GET /information_cones/new
