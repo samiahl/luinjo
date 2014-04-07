@@ -9,7 +9,12 @@
   </div>
   <div class="col-md-8">
     <p><%= post.title %></p>
-    <p><span class="label label-default"><%= post.information_cone.title %></span> <span class="label label-default"><%= post.user.username %></span></p>
+    <p>
+      <%= link_to post.information_cone do%>
+        <span class="label label-info"><%= post.information_cone.title %></span>
+      <% end %>
+      <span class="label label-default"><%= post.user.username %></span>
+    </p>
     <div class="btn-group">
       <button type="button" class="btn btn-default">Comment</button>
       <button type="button" class="btn btn-default">Report</button>
