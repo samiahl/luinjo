@@ -9,10 +9,6 @@ describe "Main navigation bar" do
     visit root_path
     expect(find_link('Information Cones').visible?).to be(true)
   end
-  it "should have a link to Posts list" do
-    visit root_path
-    expect(find_link('Posts').visible?).to be(true)
-  end
 
   context "when not signed in" do
     context "should present" do
