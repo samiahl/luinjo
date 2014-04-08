@@ -1,35 +1,11 @@
 require "spec_helper"
 
 describe PostsController do
+  # Post Fabricator has a valid user and an Information Cone
+  let(:post) { Fabricate(:post) }
+
   describe "routing" do
-
-    it "routes to #index" do
-      get("/posts").should route_to("posts#index")
-    end
-
-    it "routes to #new" do
-      get("/posts/new").should route_to("posts#new")
-    end
-
-    it "routes to #show" do
-      get("/posts/1").should route_to("posts#show", :id => "1")
-    end
-
-    it "routes to #edit" do
-      get("/posts/1/edit").should route_to("posts#edit", :id => "1")
-    end
-
-    it "routes to #create" do
-      post("/posts").should route_to("posts#create")
-    end
-
-    it "routes to #update" do
-      put("/posts/1").should route_to("posts#update", :id => "1")
-    end
-
-    it "routes to #destroy" do
-      delete("/posts/1").should route_to("posts#destroy", :id => "1")
-    end
-
+    it { should route(:post, "/#{post.information_cone.id}/posts").to(controller: 'posts', action: 'create', information_cone_id: post.information_cone.id) }
+    it { should route(:get, "#{post.information_cone.id}/posts/#{post.id}").to(controller: 'posts', action: 'show', information_cone_id: post.information_cone_id, id: post.id) }
   end
 end
