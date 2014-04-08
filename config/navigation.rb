@@ -10,8 +10,6 @@ SimpleNavigation::Configuration.run do |navigation|
           information_cones.item information_cone[:title].to_sym, information_cone[:title], information_cone_path(information_cone)
         end
       end
-      primary.item :posts, 'Posts', posts_path
-
       # Devise specific links
       if user_signed_in?
         primary.item :edit_account, 'Edit account', edit_user_registration_path

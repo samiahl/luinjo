@@ -5,12 +5,14 @@ class InformationConesController < ApplicationController
   # GET /information_cones.json
   def index
     @information_cones = InformationCone.all
+    @posts = Post.all
   end
 
   # GET /information_cones/1
   # GET /information_cones/1.json
   def show
     @posts = @information_cone.posts
+    @subscription = Subscription.find_by({user_id: current_user.id, information_cone_id: @information_cone.id}) if signed_in?
   end
 
   # GET /information_cones/new
