@@ -3,9 +3,9 @@
   <h1><%=t '.title', :default => model_class.model_name.human.titleize %></h1>
   <% if signed_in? %>
     <% if @subscription %>
-      <%= link_to("Unsubscribe", subscription_path(@subscription), method: :delete, class: 'btn btn-danger') %>
+      <%= link_to("Unsubscribe", information_cone_unsubscribe_path(@information_cone), method: :delete, class: 'btn btn-danger') %>
     <% else %>
-      <%= link_to("Subscribe", subscriptions_path(user_id: current_user.id, information_cone_id: @information_cone.id), method: :post, class: 'btn btn-success') %>
+      <%= link_to("Subscribe", information_cone_subscribe_path(user_id: current_user.id, information_cone_id: @information_cone.id), method: :post, class: 'btn btn-success') %>
     <% end -%>
   <% end %>
 </div>

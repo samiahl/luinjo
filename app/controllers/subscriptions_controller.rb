@@ -25,7 +25,7 @@ class SubscriptionsController < ApplicationController
   private
 
   def set_subscription
-    @subscription = Subscription.find(params[:id])
+    @subscription = Subscription.find_by(information_cone_id: params[:information_cone_id], user_id: current_user.id)
   end
 
   def subscription_params
