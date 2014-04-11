@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/seyhunak/twitter-bootstrap-rails.git
-  revision: cdc2facf19c9a08d2a72fa281b4be3ed72fbee03
+  revision: f58909b7d6d12d88c2c79eda96d601f12a08bf85
   branch: bootstrap3
   specs:
     twitter-bootstrap-rails (3.1.1)
@@ -38,6 +38,9 @@ GEM
       tzinfo (~> 0.3.37)
     arel (4.0.2)
     bcrypt (3.1.7)
+    better_errors (1.1.0)
+      coderay (>= 1.0.0)
+      erubis (>= 2.6.6)
     bootstrap-sass (3.1.1.0)
       sass (~> 3.2)
     builder (3.1.4)
@@ -162,7 +165,7 @@ GEM
     rails_12factor (0.0.2)
       rails_serve_static_assets
       rails_stdout_logging
-    rails_layout (1.0.13)
+    rails_layout (1.0.14)
     rails_serve_static_assets (0.0.2)
     rails_stdout_logging (0.0.3)
     railties (4.0.4)
@@ -257,6 +260,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  better_errors
   bootstrap-sass
   capybara
   coffee-rails (~> 4.0.0)

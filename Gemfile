@@ -57,6 +57,7 @@ group :development do
   gem 'guard-livereload'
   gem 'foreman'
   gem 'rails_layout'
+  gem 'better_errors'
 end
 
 group :staging, :production do
