@@ -8,7 +8,11 @@
     <p><span class="badge alert-danger">Irrelevance number here</span></p>
   </div>
   <div class="col-md-8">
-    <p><%= post.title %></p>
+    <% if post.url.blank? %>
+      <p><%= link_to(post.title, information_cone_post_path(information_cone_id: post.information_cone_id, id: post.id)) %></p>
+    <% else %>
+      <p><%= link_to post.title, post.url %></p>
+    <% end %>
     <p>
       <%= link_to post.information_cone do%>
         <span class="label label-info"><%= post.information_cone.title %></span>
