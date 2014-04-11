@@ -2,7 +2,7 @@ Luinjo::Application.routes.draw do
   #devise_for :users
   devise_for :users, path_names: { sign_in: 'login', sign_out: 'logout', registration: 'register' }
 
-  resources :information_cones, path: '' do
+  resources :information_cones, path: '/feeds' do
     post 'subscribe' => 'subscriptions#create'
     delete 'unsubscribe' => 'subscriptions#destroy'
     resources :posts, only: ['create', 'show']
