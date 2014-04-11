@@ -44,7 +44,7 @@ class InformationConesController < ApplicationController
   # PATCH/PUT /information_cones/1.json
   def update
     respond_to do |format|
-      if @information_cone.update(information_cone_params)
+      if @information_cone.update(information_cone_update_params)
         format.html { redirect_to @information_cone, notice: 'Information cone was successfully updated.' }
         format.json { head :no_content }
       else
@@ -73,5 +73,9 @@ class InformationConesController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def information_cone_params
       params.require(:information_cone).permit(:title, :description)
+    end
+
+    def information_cone_update_params
+      params.require(:information_cone).permit(:description)
     end
 end
