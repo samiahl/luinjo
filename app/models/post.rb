@@ -16,4 +16,5 @@ class Post < ActiveRecord::Base
   validates :description, presence: true, if: 'url.blank?'
   validates :url, presence: true, if: 'description.blank?'
 
+  acts_as_commentable
 end

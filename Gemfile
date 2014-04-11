@@ -43,6 +43,9 @@ gem 'seed_dump'
 gem 'simple-navigation'
 gem 'simple_navigation_renderers'
 
+# Commenting
+gem 'acts_as_commentable_with_threading'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false

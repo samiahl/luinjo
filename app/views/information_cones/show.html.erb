@@ -10,27 +10,6 @@
   <% end %>
 </div>
 
-<dl class="dl-horizontal">
-  <dt><strong><%= model_class.human_attribute_name(:title) %>:</strong></dt>
-  <dd><%= @information_cone.title %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:description) %>:</strong></dt>
-  <dd><%= @information_cone.description %></dd>
-</dl>
-
-<div class="form-actions">
-  <%= link_to t('.back', :default => t("helpers.links.back")),
-    information_cones_path, :class => 'btn'  %>
-  <%= link_to t('.edit', :default => t("helpers.links.edit")),
-    edit_information_cone_path(@information_cone), :class => 'btn' %>
-  <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
-    information_cone_path(@information_cone),
-    :method => 'delete',
-    :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
-    :class => 'btn btn-danger' %>
-</div>
-
-<h2>Posts</h2>
-
 <div class="container">
   <%= render partial: 'posts/post', collection: @posts %>
 </div>

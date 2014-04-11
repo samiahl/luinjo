@@ -1,22 +1,8 @@
-<%- model_class = Post -%>
-<div class="page-header">
-  <h1><%=t '.title', :default => model_class.model_name.human.titleize %></h1>
-</div>
+<h2><%= @post.title %></h2>
+<p><%= @post.information_cone.title %> <%= @post.user.username %></p>
 
-<dl class="dl-horizontal">
-  <dt><strong><%= model_class.human_attribute_name(:title) %>:</strong></dt>
-  <dd><%= @post.title %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:description) %>:</strong></dt>
-  <dd><%= @post.description %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:url) %>:</strong></dt>
-  <dd><%= @post.url %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:information_cone_id) %>:</strong></dt>
-  <dd><%= @post.information_cone_id %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:user_id) %>:</strong></dt>
-  <dd><%= @post.user_id %></dd>
-</dl>
+<p><%= @post.description %></p>
 
-<div class="form-actions">
-  <%= link_to t('.back', :default => t("helpers.links.back")),
-              information_cone_posts_path, :class => 'btn'  %>
+<div class="container">
+  <%= render partial: 'posts/comment', collection: @comment_threads %>
 </div>

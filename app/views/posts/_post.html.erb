@@ -20,7 +20,7 @@
       <span class="label label-default"><%= post.user.username %></span>
     </p>
     <div class="btn-group">
-      <button type="button" class="btn btn-default">Comment</button>
+      <%= link_to "Comment", information_cone_post_path(information_cone_id: post.information_cone_id, id: post.id), class: "btn btn-default" %>
       <button type="button" class="btn btn-default">Report</button>
       <button type="button" class="btn btn-danger">Irrelevant!</button>
     </div>
