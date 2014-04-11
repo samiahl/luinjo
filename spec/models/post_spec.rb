@@ -59,5 +59,26 @@ describe Post do
         expect(post.save).to be false
       end
     end
+
+    it "URL and description are both empty" do
+      post.url = ""
+      post.description = ""
+      expect(post.save).to be false
+    end
+
+  end
+  context "is saved" do
+    context "when description is blank" do
+      it "but url is not" do
+        post.description = ""
+        expect(post.save).to be true
+      end
+    end
+    context "when url is blank" do
+      it "but description is not" do
+        post.url = ""
+        expect(post.save).to be true
+      end
+    end
   end
 end
