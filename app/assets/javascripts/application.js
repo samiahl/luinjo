@@ -14,4 +14,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require bootstrap
+//= require bootstrap/collapse.js
+//= require bootstrap/tooltip.js
+//= require bootstrap/popover.js
 //= require_tree .
