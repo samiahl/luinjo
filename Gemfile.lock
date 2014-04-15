@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/seyhunak/twitter-bootstrap-rails.git
-  revision: f58909b7d6d12d88c2c79eda96d601f12a08bf85
+  revision: 69463f0ca0122f6e235c6f4b54ba9a38add3de60
   branch: bootstrap3
   specs:
     twitter-bootstrap-rails (3.1.1)
@@ -90,7 +90,7 @@ GEM
     erubis (2.7.0)
     eventmachine (1.0.3)
     execjs (2.0.2)
-    fabrication (2.11.0)
+    fabrication (2.11.1)
     fabrication-rails (0.0.1)
       fabrication
       railties (>= 3.0)
@@ -126,6 +126,9 @@ GEM
     jquery-rails (3.1.0)
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
+    jquery-turbolinks (2.0.2)
+      railties (>= 3.1.0)
+      turbolinks
     json (1.8.1)
     libv8 (3.16.14.3)
     listen (2.7.1)
@@ -216,7 +219,7 @@ GEM
     seed_dump (3.1.0)
       activerecord
       activesupport
-    shoulda-matchers (2.5.0)
+    shoulda-matchers (2.6.0)
       activesupport (>= 3.0.0)
     simple-navigation (3.13.0)
       activesupport (>= 2.3.2)
@@ -281,6 +284,7 @@ DEPENDENCIES
   guard-rspec
   jbuilder (~> 1.2)
   jquery-rails
+  jquery-turbolinks
   pg
   pry-rails
   pry-remote
