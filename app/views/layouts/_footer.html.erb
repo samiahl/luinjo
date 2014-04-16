@@ -1,1 +1,15 @@
-<p class="small"><span class="glyphicon glyphicon-heart-empty"></span> Ilkka Hakkarainen, 2014</p>
+<p class="small"><span class="glyphicon glyphicon-heart-empty"></span> Ilkka Hakkarainen, 2014 - <%= link_to "Terms of Service", "#", {:'data-toggle' => "modal", :'data-target' => "#terms_of_service"} %></p>
+
+<div class="modal fade" id="terms_of_service" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Terms of Service</h4>
+      </div>
+      <div class="modal-body">
+        You hereby owe a beer to Ilkka Hakkarainen.
+      </div>
+    </div>
+  </div>
+</div>

@@ -18,4 +18,5 @@
 //= require bootstrap/collapse.js
 //= require bootstrap/tooltip.js
 //= require bootstrap/popover.js
+//= require bootstrap/modal.js
 //= require_tree .
