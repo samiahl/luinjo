@@ -6,6 +6,7 @@ class InformationConesController < ApplicationController
   def index
     @information_cones = InformationCone.all
     @posts = Post.all
+    @ads = Post.take 5
   end
 
   # GET /information_cones/1

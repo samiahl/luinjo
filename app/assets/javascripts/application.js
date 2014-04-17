@@ -19,4 +19,5 @@
 //= require bootstrap/tooltip.js
 //= require bootstrap/popover.js
 //= require bootstrap/modal.js
+//= require bootstrap/carousel.js
 //= require_tree .

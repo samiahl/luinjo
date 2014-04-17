@@ -1,0 +1,11 @@
+<div id="advertisements" class="carousel slide" data-ride="carousel">
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <% @ads.each do |ad| %>
+      <div class="advertisement item <%= "active" if @ads.first.eql? ad %>">
+        <%= render partial: 'posts/post', object: ad %>
+      </div>
+    <% end %>
+  </div>
+</div>
+

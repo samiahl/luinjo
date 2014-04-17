@@ -13,6 +13,7 @@
       <%= link_to(post.title, information_cone_post_path(information_cone_id: post.information_cone_id, id: post.id)) %>
     <% else %>
       <%= link_to post.title, post.url %>
+      <%= URI.parse(post.url).host.downcase %>
     <% end %>
     </p>
     <p>
