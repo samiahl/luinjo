@@ -7,7 +7,7 @@
     <p><span class="badge alert-success">Click count number here</span></p>
     <p><span class="badge alert-danger">Irrelevance number here</span></p>
   </div>
-  <div class="col-md-8">
+  <div class="col-md-6">
     <p>
     <% if post.url.blank? %>
       <%= link_to(post.title, information_cone_post_path(information_cone_id: post.information_cone_id, id: post.id)) %>
@@ -27,5 +27,9 @@
       <button type="button" class="btn btn-default">Report</button>
       <button type="button" class="btn btn-danger">Irrelevant!</button>
     </div>
+  </div>
+  <div class="col-md-2">
+    <a class="btn btn-primary btn-block" role="button">Open in a Tab</a>
+    <a class="btn btn-primary btn-block" role="button">Save for later</a>
   </div>
 </div>
