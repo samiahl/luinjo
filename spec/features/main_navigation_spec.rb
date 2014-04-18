@@ -3,8 +3,9 @@ require 'spec_helper'
 describe "Main navigation bar" do
   it "should have Luinjo banner/logo" do
     visit root_path
-    expect(page).to have_selector('a.navbar-brand')
+    expect(page).to have_selector('img.navbar-brand')
   end
+
   it "should have a link to Information Cone list" do
     visit root_path
     expect(find_link('Information Cones').visible?).to be(true)
