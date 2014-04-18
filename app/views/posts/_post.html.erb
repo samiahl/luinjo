@@ -29,7 +29,11 @@
     </div>
   </div>
   <div class="col-md-2">
-    <a class="btn btn-primary btn-block" role="button">Open in a Tab</a>
+    <% if post.url.blank? %>
+      <%= link_to("Open in a new Tab", information_cone_post_path(information_cone_id: post.information_cone_id, id: post.id), class: "btn btn-primary btn-block", target: "_blank") %>
+    <% else %>
+      <%= link_to "Open in a new Tab", post.url, class: "btn btn-primary btn-block", target: "_blank" %>
+    <% end %>
     <a class="btn btn-primary btn-block" role="button">Save for later</a>
   </div>
 </div>
