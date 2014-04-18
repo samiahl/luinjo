@@ -3,6 +3,8 @@
 [![Coverage Status](https://coveralls.io/repos/Irkka/luinjo/badge.png?branch=development)](https://coveralls.io/r/Irkka/luinjo?branch=development)
 [![Code Climate](https://codeclimate.com/github/Irkka/luinjo.png)](https://codeclimate.com/github/Irkka/luinjo)
 
+[![Luinjo logo](https://rawgit.com/Irkka/luinjo/development/app/assets/images/luinjo.svg)
+
 ===
 
 ## Luinjo - A Reddit clone on a national level
