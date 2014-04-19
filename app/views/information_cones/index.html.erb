@@ -1,5 +1,6 @@
 <%- model_class = InformationCone -%>
 <div class="container">
   <%= render 'posts/advertisements' %>
+  <%= will_paginate @posts, renderer: BootstrapPagination::Rails %>
   <%= render partial: 'posts/post', collection: @posts %>
 </div>

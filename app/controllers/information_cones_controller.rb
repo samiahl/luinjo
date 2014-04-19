@@ -5,7 +5,7 @@ class InformationConesController < ApplicationController
   # GET /information_cones.json
   def index
     @information_cones = InformationCone.all
-    @posts = Post.all
+    @posts = Post.paginate(page: params[:page], per_page: 10)
     @ads = Post.take 5
   end
 

@@ -42,6 +42,10 @@ gem 'devise'
 # Generate test viewing material
 gem 'seed_dump'
 
+# Paginate the posts
+gem 'will_paginate', '~> 3.0'
+gem 'will_paginate-bootstrap'
+
 # Make Navigation Bar generation a cinch
 gem 'simple-navigation'
 gem 'simple_navigation_renderers'
