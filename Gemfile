@@ -65,9 +65,11 @@ group :development do
   gem 'guard-rspec'
   gem 'guard-bundler'
   gem 'guard-livereload'
+  gem 'guard-rubocop'
   gem 'foreman'
   gem 'rails_layout'
   gem 'better_errors'
+  gem 'rubocop', require: false
 end
 
 group :staging, :production do
